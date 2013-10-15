@@ -93,6 +93,7 @@ rpc.ServiceProxy = function(serviceURL, options){
 			location.port     != (urlParts[3] || "")
 		);
 	}
+    this.__isCrossSite = false;
 	
 	//Set other default options
 	var providedMethodList;
